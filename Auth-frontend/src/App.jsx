@@ -22,7 +22,7 @@ function App() {
         return;
       }
       const myToken = JSON.parse(token);
-      const res = await fetch('http://localhost:5555/welcome', {
+      const res = await fetch('https://authenticate-opal.vercel.app/welcome', {
         headers: {
           'access-token': myToken,
         },
