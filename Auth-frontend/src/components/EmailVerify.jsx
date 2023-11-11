@@ -11,7 +11,7 @@ const EmailVerify = () => {
     showAlert('success', 'check your email to get your otp');
     async function checkVerficationToken() {
       const res = await fetch(
-        `http://localhost:5555/api/check-verificationtoken?id=${User._id}`,
+        `https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/check-verificationtoken?id=${User._id}`,
         {
           method: 'get',
         }
