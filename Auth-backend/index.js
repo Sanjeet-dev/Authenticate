@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.get('/',(req,res)=>{
-  res.json("hello");
+  res.send("GET request from home route");
 });
 app.get('/welcome', verifyToken, async (req, res) => {
   try {
