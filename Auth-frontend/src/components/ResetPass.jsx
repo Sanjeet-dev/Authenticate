@@ -7,7 +7,7 @@ import queryString from 'query-string';
 export const ResetPass = () => {
   const { showAlert } = useUserContext();
   const navigate = useNavigate();
-  const baseUrl = 'https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api';
+  const baseUrl = 'https://auth-server-omega.vercel.app/api';
   const [invalid, setInvalid] = useState(true);
   const [errMsg, setErrMsg] = useState('');
   const [inputVal, setInputVal] = useState({
