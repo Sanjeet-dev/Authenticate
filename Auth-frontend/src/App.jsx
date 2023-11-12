@@ -22,7 +22,7 @@ function App() {
         return;
       }
       const myToken = JSON.parse(token);
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/welcome', {
+      const res = await fetch('https://auth-server-omega.vercel.app/welcome', {
         headers: {
           'access-token': myToken,
         },
