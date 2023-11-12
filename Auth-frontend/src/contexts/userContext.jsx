@@ -20,7 +20,7 @@ export const UserProvider = (props) => {
 
   const LogInUser = async (email, password) => {
     try {
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/login', {
+      const res = await fetch('https://auth-server-omega.vercel.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export const UserProvider = (props) => {
   };
   const SignUpUser = async (name, email, password) => {
     try {
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/signup', {
+      const res = await fetch('https://auth-server-omega.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ export const UserProvider = (props) => {
   };
   const ForgotPasswordUser = async (email) => {
     try {
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/forgot-password', {
+      const res = await fetch('https://auth-server-omega.vercel.app/api/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export const UserProvider = (props) => {
   };
   const ResetPasswordUser = async (email) => {
     try {
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/reset-password', {
+      const res = await fetch('https://auth-server-omega.vercel.app/api/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ export const UserProvider = (props) => {
     console.log(otp);
     console.log(User._id);
     try {
-      const res = await fetch('https://auth-backend-h9s0bv3fy-sanjeet204.vercel.app/api/verify-email', {
+      const res = await fetch('https://auth-server-omega.vercel.app/api/verify-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
